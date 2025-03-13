@@ -1,0 +1,48 @@
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #343a40;
+}
+
+.buttons .btn {
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.buttons .btn:hover {
+  transform: translateY(-2px);
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 0.7rem;
+}
+
+/* Make icons container relative for badge positioning */
+.buttons .btn {
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .buttons {
+    margin-top: 1rem;
+  }
+  
+  .buttons .btn {
+    padding: 0.4rem 0.8rem;
+  }
+} 

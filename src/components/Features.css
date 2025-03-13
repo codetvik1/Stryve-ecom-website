@@ -1,0 +1,61 @@
+/* Hover effects */
+.hover-scale {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  }
+  
+  /* Text styles */
+  .display-4 {
+    color: #333333;
+    position: relative;
+    overflow: hidden;
+    font-weight: 700;
+  }
+  
+  /* Keep text white on dark background */
+  .bg-dark .display-4 {
+    color: #ffffff;
+  }
+  
+  /* Image styles */
+  .img-fluid {
+    max-width: 400px !important;
+    height: auto;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  
+  /* Background styles */
+  .bg-dark {
+    background: linear-gradient(145deg, #1a1a1a 0%, #2c2c2c 100%);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .img-fluid {
+      max-width: 300px !important;
+    }
+    
+    .row {
+      margin: 0;
+    }
+    
+    .p-5 {
+      padding: 2rem !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .img-fluid {
+      max-width: 250px !important;
+    }
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }

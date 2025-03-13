@@ -1,0 +1,64 @@
+/* Product Card Styles */
+.card {
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.list-group-item.lead {
+  font-size: 1.25rem;
+  color: #212529;
+  font-weight: 600;
+}
+
+.btn-dark {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-dark:hover {
+  background-color: #343a40;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 250px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+} 
